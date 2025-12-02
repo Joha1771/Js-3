@@ -1,170 +1,103 @@
-
-// 1
-
+// For1
 let k = 28;
 let n = 6;
-
-for(let i = 1; i <= n; i++){
-    console.log(k)
+for (let i = 1; i <= n; i++) {
+  console.log(k);
 }
 
-// 2 
-
-let a = 41;
-let b = 69;
-
-let c = b - a;
-
-for(let i = 1; i <= c; i++){
-    console.log(c)
+// For2
+let a2 = 41,
+  b2 = 69;
+for (let i = a2; i <= b2; i++) {
+  console.log(i);
 }
-for(let i = 1; i <= a; i++){
-    console.log(b)
-}
- 
-for(let i = 1; i <= b; i++){
-    console.log(a)
-}
+console.log("Count =", b2 - a2 + 1);
 
-// 3
-
-
-let w = 14;
-let r = 20;
-
-let t = r - w;
-let y = w + r;
-
-for(let i = 1; i <= t; i++){
-    console.log(t)
+// For3
+let a3 = 14,
+  b3 = 20;
+for (let i = b3; i >= a3; i--) {
+  console.log(i);
 }
-for(let i=1; i <= t; i++){
-    console.log(-i - (-y))
-}
-for(let i=1; i <= a; i++){
-    console.log(a)
-}
-for(let i=1; i <= a; i++){
-    console.log(b)
+console.log("Count =", b3 - a3 + 1);
+
+// For4
+let price4 = 48000;
+for (let i = 1; i <= 10; i++) {
+  console.log(i + " kg narxi = " + price4 * i);
 }
 
-// 4
-
-let u = 48000;
-
-for(let i = 1; i <= 10; i = i + 1){
-    console.log(i +  " kg konfetti narxi = " + (u * i).toFixed(2))
+// For5
+let price5 = 15000;
+for (let i = 0.1; i <= 1; i += 0.1) {
+  console.log(i.toFixed(1) + " kg narxi = " + (price5 * i).toFixed(2));
 }
 
-
- console.log("")
-
-
-// 5
-
-let o = 15000;
-
-for(let i = 0.1; i <= 1; i = i + 0.1){
-    console.log(i.toFixed(1) + " kg konfet narxi = " + (o * i).toFixed(2))
+// For6
+let price6 = 45000;
+for (let x = 1.0; x <= 2.0; x += 0.2) {
+  console.log(x.toFixed(1) + " kg narxi = " + price6 * x);
 }
 
-console.log("")
+// For7
+let A7 = 15,
+  B7 = 28,
+  sum7 = 0;
+for (let i = A7; i <= B7; i++) sum7 += i;
+console.log("Sum =", sum7);
 
-// 6
+// For8
+let A8 = 15,
+  B8 = 28,
+  mul8 = 1;
+for (let i = A8; i <= B8; i++) mul8 *= i;
+console.log("Multiplication =", mul8);
 
-let p = 45000;
+// For9
+let A9 = 18,
+  B9 = 45,
+  sum9 = 0;
+for (let i = A9; i <= B9; i++) sum9 += i ** 2;
+console.log("Squares Sum =", sum9);
 
-for(let i = 1; i <= 2; i = i * 1.1){
-    console.log(i.toFixed(1) + " kg konfet narxi = " + (p * i).toFixed(2))
+// For10
+let n10 = 5,
+  S10 = 0;
+for (let i = 1; i <= n10; i++) S10 += 1 / i;
+console.log("S =", S10);
+
+// For11
+let n11 = 29,
+  S11 = 0;
+for (let i = n11; i <= 2 * n11; i++) S11 += i ** 2;
+console.log("S =", S11);
+
+// For12
+let n12 = 5,
+  P12 = 1;
+for (let i = 1; i <= n12; i++) P12 *= i;
+console.log("P =", P12);
+
+// For13
+let n13 = 10,
+  S13 = 0;
+for (let i = 1; i <= n13; i++) {
+  if (i % 2 === 0) S13 -= 1 / i;
+  else S13 += 1 / i;
 }
+console.log("Alternating S =", S13);
 
-
-console.log("")
-
-// 7 
-
-let m = 15;
-let nn = 28;
-
-let z = (nn - m)
-let v = (nn - m) / 10
-let x = (nn - m) % 10
-
-for(let i = 1; i <= z; i++){
-    console.log(parseInt(v) + x);
+// For14
+let n14 = 10;
+let S14 = 0;
+for (let i = 1; i <= 2 * n14 - 1; i += 2) {
+  S14 += i ** 3;
 }
+console.log("Formula =", S14);
 
-
-
-// 8
-
-let h = 67;
-let j = 72;
-
-let g = (j - h) * 2
-
-for(let i=1; i <= g; i++ ){
-    console.log(i+g)
-}
-
-// 9
-
-let B = 18;
-let C = 45;
-
-let G = C - B
-
-for(let i = 1; i <= G; i++){
-    console.log(G**2)
-}
-
-// 10
-
-let F = 5;
-let K = 0;
-
-for(i = 1; i <= F; i++){
-console.log(1 + "/" + i);
-
-}
-
-// 11
-
-let FF = 29;
-
-for(let i = 0; i <= FF; i++){
-    console.log(i+(FF**2))
-}
-
-
-// 12
-
-let FFF = 5;
-
-for(let i = 0; i <= FFF; i++){
-    let value = 1.0 + i * 0.1
-    console.log(value.toFixed(1))
-}
-
-
-console.log("")
-
-// 13
-
-let Q = 7;
-
-
-
-for(let i=0; i <= Q; i++){
-    let value = 1.0 + i * 0.1 
-    console.log(value.toFixed(1))
-}
-
-// 14
-
-let H = 10;
-
-
-for(let i = 1; i <= H; i++){
-    console.log(i + 2 * (H**2 - 1))
-}
+// For15
+let a15 = 3,
+  n15 = 5,
+  P15 = 1;
+for (let i = 1; i <= n15; i++) P15 *= a15;
+console.log("a^n =", P15);
